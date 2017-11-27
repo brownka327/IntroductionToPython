@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 ########################################################################
 
 ########################################################################
-# TODO: 2.
+# DONE: 2.
 #
 #  You should have RUN the PREVIOUS module and READ its code.
 #  (Do so now if you have not already done so.)
@@ -32,27 +32,43 @@ import rosegraphics as rg
 
 window = rg.TurtleWindow()
 turtle1=rg.SimpleTurtle('turtle')
-turtle1.Pen = rg.Pen('red')
+turtle1.pen = rg.Pen('red',10)
 turtle2=rg.SimpleTurtle('turtle')
-turtle2.Pen = rg.Pen('DeepSkyBlue')
+turtle2.pen = rg.Pen('DeepSkyBlue',10)
+turtle1.speed = 100
+turtle2.speed = 100
 
-for
+#put turtles in starting position
+turtle1.pen_up()
+turtle2.pen_up()
+turtle1.forward(100)
+turtle2.right(180)
+turtle2.forward(100)
 
-    size = 100
+#define size
+size = 100
+
+for k in range(100):
+
+
 
     #put pen down and draw shape
     turtle1.pen_down()
-    turtle2.pen_down
-    turtl
+    turtle2.pen_down()
+    turtle1.forward(size)
+    turtle1.left(60)
+    turtle1.forward(size)
+    turtle1.left(60)
+    turtle1.forward(size)
+    turtle1.left(60)
+    turtle2.forward(size)
+    turtle2.right(60)
+    turtle2.forward(size)
+    turtle2.right(60)
+    turtle2.forward(size)
+    turtle2.right(60)
 
-    turtle1.pen_up()
-    turtle2.pen_up()
-    turtle1.forward(100)
-    turtle2.right(180)
-    turtle2.forward(100)
-
-
-
-
+    #increase size
+    size = size+10
 
 window.close_on_mouse_click()
