@@ -96,6 +96,6 @@ print(3607*34227)
 #   its TO DO to DONE.  Then run the file (to make sure you didn't break
 #   anything) then Commit and Sync again.
 #
-#   You can COMMIT as often as you like.  DO FREQUENT COMMITS.
+#   You can COMMIT as often as you like.  DO FREQUENT COMMITS!
 #
 ########################################################################
